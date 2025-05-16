@@ -1,52 +1,39 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frutería</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">Frutería</div>
-
-        <div class="nombreAlumno"></div>
-
-        <input type="text" placeholder="Search..." class="search-bar">
-
-        <div class="cart">
-            <span>Cart: <span id="cart-count">0</span> items</span>
-        </div>
-    </nav>
-
-
-    <!-- Contenedor principal -->
-    <main>
-    <section class="products-section">
-
-        <h2>Nuestras frutas</h2>
-        <div class="product-grid">
-
-        </div>
-    </section>
-
-
-    <!-- Sección carrito -->
-    <section class="cart-section">
-
-        <h2>Carrito</h2>
-
-        <div id="cart-items">
-            <p>No hay elementos en el carrito.</p>
-        </div>
-
-        <div class="cart-total">
-            <p>Total: <span id="total-price">$0.00</span></p>
-        </div>
-
-    </section>
-    </main>
-</body>
+<!DOCTYPE html> <!--Archivo HTML5-->
+<html lang = "es"> <!--En español-->
+    <head> <!--Encabezado-->
+        <meta charset = "UTF-8"> <!--Codificación para soportar algunos caracteres especiales-->
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0"> <!--Adaptabilidad a muchos dispositivos-->
+        <title> Frutería </title> <!--Título de la pestaña-->
+        <link rel = "stylesheet" href = "css/styles.css"> <!--Importación de archivo CSS-->
+    </head>
+    <body> <!--Cuerpo-->
+        <!-- Navbar -->
+        <nav class = "navbar"> <!--Barra de navegación superior-->
+            <div class = "logo"> Frutería </div> <!--Nombre-->
+            <div class = "nombreAlumno"></div> <!--Div vacío para insertar nombre-->
+            <input type = "text" placeholder = "Search..." class = "search-bar"> <!--Campo de búsqueda-->
+            <div class = "cart">
+                <span> Cart: <span id = "cart-count"> 0 </span> items </span> <!--Texto del carrito con la cantidad de ítems-->
+            </div>
+        </nav>
+        <!-- Contenedor principal -->
+        <main> <!--Sección de productos-->
+            <section class = "products-section">
+                <h2> Nuestras frutas </h2> <!--Sección principal-->
+                <div class = "product-grid">
+                </div>
+            </section>
+        <!-- Sección carrito -->
+            <section class = "cart-section">
+                <h2> Carrito </h2>
+                <div id = "cart-items">
+                    <p> No hay elementos en el carrito. </p>
+                </div>
+                <div class = "cart-total">
+                    <p> Total: <span id = "total-price"> $0.00 </span></p> <!--Precio total del carrito-->
+                </div>
+            </section>
+        </main>
+        <script src = "js/main.js"></script> <!--Vinculación archivo JS-->
+    </body>
 </html>
